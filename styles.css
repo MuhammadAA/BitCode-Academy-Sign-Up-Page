@@ -1,0 +1,16 @@
+.background{
+    height: 730px;
+    width: 100%;
+    
+    box-sizing: border-box;
+    filter: blur(4px);
+
+    margin-top: -350px;
+}
+
+
+.signup {
+    background-color: black;
+    height: 500px;
+    width: 400px;
+}
