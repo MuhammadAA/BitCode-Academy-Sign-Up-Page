@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BitCode Academy Sign-up Page</title>
+    <title>BitCode Sign-up Page</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="logo.png">
 </head>
 <body>
     <div class="signup">
@@ -16,40 +18,42 @@
         </header>
 
         <fieldset>
-            <form action="" method="post">   <!-- http://httpbin.org/post-->
-
+            <form id="form" action="" method="post">   <!-- http://httpbin.org/post-->
+                <!--
                 <div class="inputDiv"> 
                     <label for="firstName">First Name</label>
-                    <input name="firstName" type="text" id="firstName" placeholder="First Name...">
-                </div>
+                    <input name="firstName" type="text" id="firstName" placeholder="First Name..." required>
+                </div>  -->
                 
                 <div class="inputDiv">
-                    <label for="lastName">Last Name</label>
-                    <input name="lastName" type="text" id="lastName" placeholder="Last Name...">
+                    <label for="fullName">Full Name</label>
+                    <input name="fullName" type="text" id="fullName" placeholder="Ex. John Doe" required>
                 </div>
 
                 <div class="inputDiv">
                     <label for="email">Email</label>
-                    <input name="email" type="email" id="email" placeholder="email@domain.com">
+                    <input name="email" type="email" id="email" placeholder="Ex. email@domain.com" required>
                 </div>
 
                 <div class="inputDiv">
                     <label for="phNumber">Phone Number</label>
-                    <input name="phoneNumber" type="tel" id="phNumber" placeholder="123-456-7890">
+                    <input name="phoneNumber" type="tel" id="phNumber" placeholder="Ex. 123-456-7890" pattern="[0-9]{10}" required>
                 </div>
 
                 <div class="inputDiv">
                     <label for="pass">Password</label>
-                    <input name="password" type="password" id="pass" placeholder="xxxxxxxxxx">
+                    <input name="password" type="password" id="pass" placeholder="Ex. xxxxxxxxxx" required minlength="8">
                 </div>
 
                 <div class="inputDiv">
                     <label for="passConf">Password Confirm</label>
-                    <input type="password" id="passConf" placeholder="xxxxxxxxxx">
+                    <input type="password" id="passConf" placeholder="Ex. xxxxxxxxxx" required minlength="8">
+                    <p class="invisible" id="error">Passwords do not match!</p>
                 </div>
 
-
-                <button type="submit">Submit</button>
+                <p id="login">Have an account already? <a src="">Login</a></p>
+                <button type="button" id="btnSubmit" onclick="sub()">Register</button>
+                <script> </script>
             </form>
         </fieldset>
         
