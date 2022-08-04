@@ -1,6 +1,10 @@
 # BitCode Academy Sign Up Page
  
-## Inspiration 
-![image](Inspo.PNG)
+## Sign-up page Inspiration 
+![image](signUpInspo.PNG)
 
-## Sign-Up Page final version
+
+
+
+## Login page Inspiration
+![image](loginInspo.png)
